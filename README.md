@@ -4,7 +4,7 @@ Encrypted-filenames for Unix Password-Store
 The Problem
 ----------------
 
-[Unix Password-Store](https://github.com/zx2c4/password-store/password-store) (`pass`)
+[Unix Password-Store](https://github.com/zx2c4/password-store) (`pass`)
 is great, but I have one big qualm: it stores filenames unencrypted.
 This informs attackers of the value of your repo (`Banking-Passwords.gpg`),
 and/or leaks private information (`Login-to-ssh.example.com.gpg`).
