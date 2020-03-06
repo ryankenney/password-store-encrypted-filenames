@@ -24,7 +24,7 @@ as `pass find`, but that seems like a very reasonable trade-off.
 Current Status
 ----------------
 
-This is just a proposal thus far.
+This is a proposal.
 
 
 More Docs
