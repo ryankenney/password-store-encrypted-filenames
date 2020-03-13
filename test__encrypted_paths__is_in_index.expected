@@ -1,0 +1,12 @@
+# Directories should not match
+false
+# Existing files should match
+true
+true
+true
+# Paths that are suffixes to others shouldn't match
+true
+false
+# Paths that are prefixes to others shouldn't match
+true
+false

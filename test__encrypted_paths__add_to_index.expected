@@ -1,0 +1,30 @@
+# Adding an existing path has no effect
+/a/2.gpg
+/a/b/3.gpg
+/a/b/5.gpg/z/5.gpg
+/a/b/c/1.gpg
+/z/a/2.gpg
+/z/a/b/3.gpg
+/z/a/b/4.gpg
+/z/a/b/c/1.gpg
+# Adding an entry that happens to be a suffix to another entry results in new entry
+/a/2.gpg
+/a/b/3.gpg
+/a/b/4.gpg
+/a/b/5.gpg/z/5.gpg
+/a/b/c/1.gpg
+/z/a/2.gpg
+/z/a/b/3.gpg
+/z/a/b/4.gpg
+/z/a/b/c/1.gpg
+# Adding an entry that happens to be a prefix to another entry results in new entry
+/a/2.gpg
+/a/b/3.gpg
+/a/b/4.gpg
+/a/b/5.gpg
+/a/b/5.gpg/z/5.gpg
+/a/b/c/1.gpg
+/z/a/2.gpg
+/z/a/b/3.gpg
+/z/a/b/4.gpg
+/z/a/b/c/1.gpg
