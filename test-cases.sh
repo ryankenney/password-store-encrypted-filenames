@@ -28,11 +28,10 @@ setup_test_files() {
 }
 
 encrypted_paths__path_to_hash() {
-    local salt_file="$1"
-    local salt="$(cat "$salt_file")"
+    local saltfile="$1"
     local passfile="$2"
-    local host="$(echo "${salt}:${passfile}" | sha256sum )"
-    # TODO: Apply as tr to previous line (eliminating variable)
+    local salt="$(cat "$saltfile")"
+    local host="$(echo -n "${salt}:${passfile}" | sha256sum )"
     echo "${host:0:64}"
 }
 
