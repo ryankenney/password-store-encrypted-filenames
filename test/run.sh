@@ -5,7 +5,7 @@ set -e
 SCRIPT_FILE="$(basename "$0")"
 SCRIPT_DIR="$(dirname `readlink -f "$0"`)"
 
-. "$SCRIPT_DIR/lib/password-store-encrypted-filenames.sh"
+. "$SCRIPT_DIR/../lib/password-store-encrypted-filenames.sh"
 
 echoTestStart() {
 	echo ""
